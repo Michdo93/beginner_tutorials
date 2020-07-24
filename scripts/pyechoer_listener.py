@@ -57,7 +57,7 @@ class PyEchoer(object):
 # Main function.
 if __name__ == "__main__":
     # Initialize the node and name it.
-    rospy.init_node("pyTalker", anonymous=True)
+    rospy.init_node("pyListener", anonymous=True)
     # Go to class functions that do all the heavy lifting.
 
     echo = PyEchoer()

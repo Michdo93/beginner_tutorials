@@ -3,6 +3,8 @@
 """Example Python node to listen on a specific topic."""
 
 # Import required Python code.
+import os
+import sys
 import rospy
 from std_msgs.msg import String
 
