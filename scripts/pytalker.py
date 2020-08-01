@@ -6,10 +6,11 @@ import os
 import sys
 import cv2
 import edgetpu
+import getpass
 import rospy
 from std_msgs.msg import String
 
-env=os.path.expanduser(os.path.expandvars('/home/ros'))
+env=os.path.expanduser(os.path.expandvars('/home/' + getpass.getuser()))
 sys.path.insert(0, env)
 
 from Adafruit_Python_PCA9685 import Adafruit_PCA9685
